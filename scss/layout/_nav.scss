@@ -1,0 +1,21 @@
+//====================Begining of Main-NAV section===================//
+.main-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 81px;
+  width: 100%;
+  background: url(../img/nav-bg.jpg);
+  .main-links {
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+  }
+  .search {
+    display: flex;
+    justify-content: space-around;
+    i {
+      filter: invert(1);
+    }
+  }
+}

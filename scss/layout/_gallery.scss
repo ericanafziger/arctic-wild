@@ -1,0 +1,8 @@
+//=====================Begining of GALLERY section===================//
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+//=====================Begining of Rafting section===================//
+@include gallery (rafting home-raft, basecamp home-basecamp, backpacking home-backpacking, canoe home-canoe, photography home-photo, custom home-custom);

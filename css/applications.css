@@ -162,4 +162,61 @@ h5 {
     border-left: 15px solid transparent;
     border-right: 15px solid transparent; }
 
+.gallery {
+  display: flex;
+  flex-wrap: wrap; }
+
+.rafting {
+  background: url(../img/home-raft.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 420px; }
+
+.basecamp {
+  background: url(../img/home-basecamp.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 420px; }
+
+.backpacking {
+  background: url(../img/home-backpacking.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 420px; }
+
+.canoe {
+  background: url(../img/home-canoe.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 420px; }
+
+.photography {
+  background: url(../img/home-photo.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 420px; }
+
+.custom {
+  background: url(../img/home-custom.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 420px; }
+
+.main-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 81px;
+  width: 100%;
+  background: url(../img/nav-bg.jpg); }
+  .main-nav .main-links {
+    display: flex;
+    width: 40%;
+    justify-content: space-around; }
+  .main-nav .search {
+    display: flex;
+    justify-content: space-around; }
+    .main-nav .search i {
+      filter: invert(1); }
+
 /*# sourceMappingURL=applications.css.map */

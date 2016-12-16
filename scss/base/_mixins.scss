@@ -1,0 +1,10 @@
+@mixin gallery($classes...) {
+  @each $class in $classes {
+    .#{nth($class, 1)} {
+      background: url(../img/#{nth($class, 2)}.jpg);
+      background-size: cover;
+      background-position: center center;
+      height: 420px;
+    }
+  }
+}
