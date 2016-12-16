@@ -74,14 +74,17 @@ a {
 
 ul {
   font-family: 'Fjalla One', sans-serif;
-  font-size: 1em;
+  font-size: .95em;
   letter-spacing: 2px;
   text-transform: uppercase; }
 
 h1 {
-  padding: 10px;
+  padding: 8px;
   font-size: 7.5em;
   text-transform: uppercase; }
+  @media screen and (max-width: 930px) {
+    h1 {
+      font-size: 4.5em; } }
 
 h2 {
   font-size: 2em;
@@ -93,6 +96,9 @@ h3 {
   letter-spacing: 4px;
   text-transform: uppercase;
   padding: 6px; }
+  @media screen and (max-width: 930px) {
+    h3 {
+      font-size: 1em; } }
 
 h4 {
   font-size: 1.4em;
@@ -118,6 +124,9 @@ h5 {
   background-position: center center;
   height: 100vh;
   width: 100vw; }
+  @media screen and (max-width: 930px) {
+    .hero {
+      height: 500px; } }
 
 .top-nav {
   color: #FFFFFF;
@@ -126,20 +135,57 @@ h5 {
   padding: 80px 70px 0 70px;
   width: 80%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: baseline; }
-  .top-nav .links {
-    width: 700px; }
-    .top-nav .links ul {
-      font-family: 'Fjalla One', sans-serif;
-      display: flex;
-      justify-content: space-around; }
-      .top-nav .links ul li {
-        margin-left: 20px; }
+
+.logo {
+  width: 400px;
+  white-space: nowrap; }
+
+.links {
+  white-space: nowrap;
+  width: 700px;
+  margin-left: 60px; }
+  @media screen and (max-width: 1040px) {
+    .links {
+      margin-left: 40px;
+      font-size: 0.8em; } }
+  @media screen and (max-width: 930px) {
+    .links {
+      display: none;
+      width: 0px; } }
+  .links ul {
+    font-family: 'Fjalla One', sans-serif;
+    display: flex;
+    justify-content: space-around; }
+    .links ul li {
+      position: relative;
+      padding: 15px; }
+
+.dropdown:hover {
+  cursor: pointer;
+  background: #404040; }
+.dropdown:hover > .sub-menu {
+  display: block; }
+.dropdown .sub-menu {
+  display: none;
+  z-index: 2;
+  width: 260px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #404040;
+  line-height: 1.5em; }
+  .dropdown .sub-menu li {
+    color: lightgrey;
+    text-transform: none;
+    border-bottom: 1px solid #CDD0D1; }
+    .dropdown .sub-menu li:hover {
+      color: white; }
 
 .hero-text {
   position: relative;
-  top: 12%;
+  top: 5%;
   text-align: center;
   color: #FFFFFF; }
 
@@ -149,6 +195,9 @@ h5 {
   display: flex;
   align-items: center;
   justify-content: center; }
+  @media screen and (max-width: 930px) {
+    .play {
+      margin-top: 20px; } }
   .play img {
     width: 30px;
     height: 35px; }
@@ -160,6 +209,10 @@ h5 {
   transform: translate(-50%, 0);
   background: #DC7725;
   padding: 15px 20px; }
+  @media screen and (max-width: 930px) {
+    .explore {
+      display: none;
+      width: 0px; } }
   .explore .triangle {
     position: absolute;
     top: 100%;
@@ -209,6 +262,9 @@ h5 {
   padding: 40px;
   position: relative;
   width: 50%; }
+  @media screen and (max-width: 930px) {
+    .rafting {
+      width: 100%; } }
 
 .basecamp {
   background: url(../img/home-basecamp.jpg);
@@ -219,6 +275,9 @@ h5 {
   padding: 40px;
   position: relative;
   width: 25%; }
+  @media screen and (max-width: 930px) {
+    .basecamp {
+      width: 50%; } }
 
 .backpacking {
   background: url(../img/home-backpacking.jpg);
@@ -229,6 +288,9 @@ h5 {
   padding: 40px;
   position: relative;
   width: 25%; }
+  @media screen and (max-width: 930px) {
+    .backpacking {
+      width: 50%; } }
 
 .canoe {
   background: url(../img/home-canoe.jpg);
@@ -239,6 +301,9 @@ h5 {
   padding: 40px;
   position: relative;
   width: 25%; }
+  @media screen and (max-width: 930px) {
+    .canoe {
+      width: 50%; } }
 
 .photography {
   background: url(../img/home-photo.jpg);
@@ -249,6 +314,9 @@ h5 {
   padding: 40px;
   position: relative;
   width: 25%; }
+  @media screen and (max-width: 930px) {
+    .photography {
+      width: 50%; } }
 
 .custom {
   background: url(../img/home-custom.jpg);
@@ -259,6 +327,9 @@ h5 {
   padding: 40px;
   position: relative;
   width: 50%; }
+  @media screen and (max-width: 930px) {
+    .custom {
+      width: 100%; } }
 
 .main-nav {
   display: flex;
@@ -267,6 +338,9 @@ h5 {
   height: 81px;
   width: 100%;
   background: url(../img/nav-bg.jpg); }
+  @media screen and (max-width: 930px) {
+    .main-nav {
+      display: none; } }
   .main-nav .main-links {
     display: flex;
     width: 40%;

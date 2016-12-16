@@ -6,6 +6,9 @@
   height: 81px;
   width: 100%;
   background: url(../img/nav-bg.jpg);
+  @media screen and #{$md-break} {
+    display: none;
+  }
   .main-links {
     display: flex;
     width: 40%;

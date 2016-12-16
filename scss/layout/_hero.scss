@@ -7,6 +7,9 @@
   background-position: center center;
   height: 100vh;
   width: 100vw;
+  @media screen and #{$md-break} {
+    height: 500px;
+  }
 }
 //====================Begining of TOP-NAV section===================//
 .top-nav {
@@ -16,24 +19,67 @@
   padding: 80px 70px 0 70px;
   width: 80%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: baseline;
-  .links {
-    width: 700px;
-    ul {
-      font-family: 'Fjalla One', sans-serif;
-      display: flex;
-      justify-content: space-around;
-      li {
-        margin-left: 20px;
+}
+.logo {
+  width: 400px;
+  white-space: nowrap;
+}
+.links {
+  white-space: nowrap;
+  width: 700px;
+  margin-left: 60px;
+  @media screen and #{$lg-break} {
+    margin-left: 40px;
+    font-size: 0.8em;
+  }
+  @media screen and #{$md-break} {
+    display: none;
+    width: 0px;
+  }
+  ul {
+    font-family: 'Fjalla One', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    li {
+      position: relative;
+      padding: 15px;
+    }
+  }
+}
+.dropdown {
+  &:hover {
+    cursor: pointer;
+    background: $sub-nav-bg;
+  }
+  &:hover > .sub-menu {
+    display: block;
+  }
+  .sub-menu {
+    display: none;
+    z-index: 2;
+    width: 260px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: $sub-nav-bg;
+    line-height: 1.5em;
+    li {
+      color: lightgrey;
+      text-transform: none;
+      border-bottom: 1px solid $sub-nav-line;
+      &:hover {
+        color: white;
       }
     }
   }
 }
+
 //====================Begining of HERO-TEXT section===================//
 .hero-text {
   position: relative;
-  top: 12%;
+  top: 5%;
   text-align: center;
   color: $white;
   .line {
@@ -47,6 +93,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  @media screen and #{$md-break} {
+    margin-top: 20px;
+  }
 
   img {
     width: 30px;
@@ -61,6 +110,10 @@
   transform: translate(-50%,0);
   background: $orange;
   padding: 15px 20px;
+  @media screen and #{$md-break} {
+    display: none;
+    width: 0px;
+  }
   .triangle {
     position: absolute;
     top: 100%;
