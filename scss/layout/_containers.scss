@@ -1,3 +1,19 @@
 * {
   box-sizing: border-box;
 }
+#wrap {
+  background: $menu-bg;
+  .content-container {
+    position: relative;
+    left: -28%;
+    z-index: 1;
+    box-shadow: 0px 0px 5px black;
+  }
+  .menu-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 28%;
+  }
+}

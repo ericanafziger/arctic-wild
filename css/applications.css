@@ -123,13 +123,27 @@ h5 {
 * {
   box-sizing: border-box; }
 
+#wrap {
+  background: #343433; }
+  #wrap .content-container {
+    position: relative;
+    left: -28%;
+    z-index: 1;
+    box-shadow: 0px 0px 5px black; }
+  #wrap .menu-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 28%; }
+
 .hero {
   position: relative;
   background: url(../img/hero-slide1.jpg);
   background-size: cover;
   background-position: center center;
   height: 100vh;
-  width: 100vw; }
+  width: 100%; }
   @media screen and (max-width: 930px) {
     .hero {
       height: 500px; } }
@@ -204,7 +218,9 @@ h5 {
       display: flex;
       justify-content: flex-end;
       width: 50%;
-      font-size: 2em; } }
+      font-size: 2em; }
+      .responsive-menu:hover {
+        cursor: pointer; } }
 
 .hero-text {
   position: relative;
