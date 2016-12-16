@@ -12,6 +12,9 @@
     width: 40px;
     background: $orange;
     bottom: 20%;
+    @media screen and #{$sm-break} {
+      bottom: 25%;
+    }
   }
   .button {
     @extend %button;

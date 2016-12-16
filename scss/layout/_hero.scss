@@ -21,10 +21,17 @@
   display: flex;
   justify-content: center;
   align-items: baseline;
+  @media screen and #{$md-break} {
+    padding: 40px 20px;
+    justify-content: space-between;
+  }
 }
 .logo {
   width: 400px;
   white-space: nowrap;
+  @media screen and #{$md-break} {
+    font-size: .8em;
+  }
 }
 .links {
   white-space: nowrap;
@@ -73,6 +80,17 @@
         color: white;
       }
     }
+  }
+}
+//====================Begining of HERO-RESPONSIVE-MENU section===================//
+.responsive-menu {
+  display: none;
+  width: 0px;
+  @media screen and #{$md-break} {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    font-size: 2em;
   }
 }
 

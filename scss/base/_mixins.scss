@@ -12,6 +12,10 @@
       @media screen and #{$md-break} {
         width: #{nth($class, 4)};
       }
+      @media screen and #{$sm-break} {
+        width: 100%;
+        height: 300px;
+      }
     }
   }
 }
