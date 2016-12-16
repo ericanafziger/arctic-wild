@@ -127,7 +127,6 @@ h5 {
   background: #343433; }
   #wrap .content-container {
     position: relative;
-    left: -28%;
     z-index: 1;
     box-shadow: 0px 0px 5px black; }
   #wrap .menu-container {
@@ -135,7 +134,7 @@ h5 {
     top: 0;
     right: 0;
     bottom: 0;
-    width: 28%; }
+    width: 250px; }
 
 .hero {
   position: relative;
