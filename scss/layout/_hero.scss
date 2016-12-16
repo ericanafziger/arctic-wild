@@ -37,10 +37,7 @@
   text-align: center;
   color: $white;
   .line {
-    background: $white;
-    width: 250px;
-    height: 5px;
-    margin: 15px auto;
+    @extend %line;
   }
 }
 .play {

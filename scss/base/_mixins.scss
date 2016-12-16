@@ -5,6 +5,10 @@
       background-size: cover;
       background-position: center center;
       height: 420px;
+      display: flex;
+      padding: 40px;
+      position: relative;
+      width: #{nth($class, 3)}
     }
   }
 }

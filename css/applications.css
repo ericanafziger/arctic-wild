@@ -48,17 +48,23 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.play {
+.play, .gallery .button {
   background: rgba(255, 255, 255, 0.4);
   transition: all ease-in-out 200ms;
   height: 100px;
   width: 100px;
   border-radius: 50%;
   margin: 0 auto; }
-  .play:hover {
+  .play:hover, .gallery .button:hover {
     cursor: pointer;
     transform: scale(1.2);
     background: rgba(255, 255, 255, 0.7); }
+
+.hero-text .line, .gallery .line {
+  background: #FFFFFF;
+  width: 250px;
+  height: 5px;
+  margin: 15px auto; }
 
 a {
   text-decoration: none;
@@ -77,6 +83,10 @@ h1 {
   font-size: 7.5em;
   text-transform: uppercase; }
 
+h2 {
+  font-size: 2em;
+  text-transform: uppercase; }
+
 h3 {
   font-family: 'Fjalla One', sans-serif;
   font-size: 1.3em;
@@ -85,8 +95,10 @@ h3 {
   padding: 6px; }
 
 h4 {
-  font-size: 2em;
-  text-transform: uppercase; }
+  font-size: 1.4em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-family: 'Fjalla One', sans-serif; }
 
 h5 {
   font-family: 'Fjalla One', sans-serif;
@@ -130,11 +142,6 @@ h5 {
   top: 12%;
   text-align: center;
   color: #FFFFFF; }
-  .hero-text .line {
-    background: #FFFFFF;
-    width: 250px;
-    height: 5px;
-    margin: 15px auto; }
 
 .play {
   margin-top: 30px;
@@ -165,42 +172,93 @@ h5 {
 .gallery {
   display: flex;
   flex-wrap: wrap; }
+  .gallery h4 {
+    align-self: flex-end; }
+  .gallery .line {
+    margin: 0;
+    position: absolute;
+    width: 40px;
+    background: #DC7725;
+    bottom: 20%; }
+  .gallery .button {
+    height: 90px;
+    width: 90px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(49, 49, 49, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .gallery .button:hover {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(1.3);
+      background: rgba(49, 49, 49, 0.8); }
+    .gallery .button img {
+      width: 40px;
+      height: 40px; }
 
 .rafting {
   background: url(../img/home-raft.jpg);
   background-size: cover;
   background-position: center center;
-  height: 420px; }
+  height: 420px;
+  display: flex;
+  padding: 40px;
+  position: relative;
+  width: 50%; }
 
 .basecamp {
   background: url(../img/home-basecamp.jpg);
   background-size: cover;
   background-position: center center;
-  height: 420px; }
+  height: 420px;
+  display: flex;
+  padding: 40px;
+  position: relative;
+  width: 25%; }
 
 .backpacking {
   background: url(../img/home-backpacking.jpg);
   background-size: cover;
   background-position: center center;
-  height: 420px; }
+  height: 420px;
+  display: flex;
+  padding: 40px;
+  position: relative;
+  width: 25%; }
 
 .canoe {
   background: url(../img/home-canoe.jpg);
   background-size: cover;
   background-position: center center;
-  height: 420px; }
+  height: 420px;
+  display: flex;
+  padding: 40px;
+  position: relative;
+  width: 25%; }
 
 .photography {
   background: url(../img/home-photo.jpg);
   background-size: cover;
   background-position: center center;
-  height: 420px; }
+  height: 420px;
+  display: flex;
+  padding: 40px;
+  position: relative;
+  width: 25%; }
 
 .custom {
   background: url(../img/home-custom.jpg);
   background-size: cover;
   background-position: center center;
-  height: 420px; }
+  height: 420px;
+  display: flex;
+  padding: 40px;
+  position: relative;
+  width: 50%; }
 
 .main-nav {
   display: flex;
