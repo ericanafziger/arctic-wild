@@ -1,4 +1,5 @@
-@import '../bourbon';
-@import '../neat';
+@import '../bourbon/bourbon';
+@import '../neat/neat';
+@import 'reset';
 @import "base/index";
 @import "layout/index";

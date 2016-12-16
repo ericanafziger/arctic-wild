@@ -1,0 +1,13 @@
+%button {
+  background: $button-bg;
+  transition: all ease-in-out 200ms;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin: 0 auto;
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    background: rgba(255,255,255, 0.7);
+  }
+}
