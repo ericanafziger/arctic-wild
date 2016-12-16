@@ -45,45 +45,9 @@
     display: none;
     width: 0px;
   }
-  ul {
-    font-family: 'Fjalla One', sans-serif;
-    display: flex;
-    justify-content: space-around;
-    li {
-      position: relative;
-      padding: 15px;
-    }
-  }
-}
-.dropdown {
-  &:hover {
-    cursor: pointer;
-    background: $sub-nav-bg;
-  }
-  &:hover > .sub-menu {
-    display: block;
-  }
-  .sub-menu {
-    display: none;
-    z-index: 2;
-    width: 260px;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: $sub-nav-bg;
-    line-height: 1.5em;
-    li {
-      color: lightgrey;
-      text-transform: none;
-      border-bottom: 1px solid $sub-nav-line;
-      &:hover {
-        color: white;
-      }
-    }
-  }
 }
 //====================Begining of HERO-RESPONSIVE-MENU section===================//
-.responsive-menu {
+.responsive-menu, .responsive-menu-close {
   display: none;
   width: 0px;
   @media screen and #{$md-break} {
@@ -126,11 +90,14 @@
 //====================Begining of EXPLORE BUTTON section===================//
 .explore {
   position: absolute;
+  border-radius: 5px;
   bottom: 7%;
   left: 50%;
-  transform: translate(-50%,0);
+  transform: translate(-50%,0) translateY(0px);
+  transition: translateY 200ms ease-in-out;
   background: $orange;
-  padding: 15px 20px;
+  padding: 20px 25px;
+  -webkit-animation: bounce 1.2s 4;
   @media screen and #{$md-break} {
     display: none;
     width: 0px;

@@ -1,5 +1,5 @@
 //=====================Begining of GALLERY section===================//
-.gallery {
+#gallery {
   display: flex;
   flex-wrap: wrap;
   @media screen and #{$sm-break} {
@@ -50,5 +50,10 @@
 .rafting {
   @media screen and #{$sm-break} {
     margin-top: 5%;
+  }
+}
+.custom {
+  @media screen and #{$sm-break} {
+    margin-bottom: 5%;
   }
 }
