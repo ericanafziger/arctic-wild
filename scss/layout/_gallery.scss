@@ -2,6 +2,9 @@
 .gallery {
   display: flex;
   flex-wrap: wrap;
+  @media screen and #{$sm-break} {
+    background: $gallery-bg;
+  }
   h4 {
     align-self: flex-end;
   }
@@ -43,3 +46,9 @@
 
 //=====================Begining of Rafting section===================//
 @include gallery (rafting home-raft 50% 100%, basecamp home-basecamp 25% 50%, backpacking home-backpacking 25% 50%, canoe home-canoe 25% 50%, photography home-photo 25% 50%, custom home-custom 50% 100%);
+
+.rafting {
+  @media screen and #{$sm-break} {
+    margin-top: 5%;
+  }
+}

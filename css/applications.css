@@ -248,6 +248,9 @@ h5 {
 .gallery {
   display: flex;
   flex-wrap: wrap; }
+  @media screen and (max-width: 620px) {
+    .gallery {
+      background: #D1D1C9; } }
   .gallery h4 {
     align-self: flex-end; }
   .gallery .line {
@@ -293,8 +296,9 @@ h5 {
       width: 100%; } }
   @media screen and (max-width: 620px) {
     .rafting {
-      width: 100%;
-      height: 300px; } }
+      width: 90%;
+      margin: 2.5% auto;
+      height: 275px; } }
 
 .basecamp {
   background: url(../img/home-basecamp.jpg);
@@ -310,8 +314,9 @@ h5 {
       width: 50%; } }
   @media screen and (max-width: 620px) {
     .basecamp {
-      width: 100%;
-      height: 300px; } }
+      width: 90%;
+      margin: 2.5% auto;
+      height: 275px; } }
 
 .backpacking {
   background: url(../img/home-backpacking.jpg);
@@ -327,8 +332,9 @@ h5 {
       width: 50%; } }
   @media screen and (max-width: 620px) {
     .backpacking {
-      width: 100%;
-      height: 300px; } }
+      width: 90%;
+      margin: 2.5% auto;
+      height: 275px; } }
 
 .canoe {
   background: url(../img/home-canoe.jpg);
@@ -344,8 +350,9 @@ h5 {
       width: 50%; } }
   @media screen and (max-width: 620px) {
     .canoe {
-      width: 100%;
-      height: 300px; } }
+      width: 90%;
+      margin: 2.5% auto;
+      height: 275px; } }
 
 .photography {
   background: url(../img/home-photo.jpg);
@@ -361,8 +368,9 @@ h5 {
       width: 50%; } }
   @media screen and (max-width: 620px) {
     .photography {
-      width: 100%;
-      height: 300px; } }
+      width: 90%;
+      margin: 2.5% auto;
+      height: 275px; } }
 
 .custom {
   background: url(../img/home-custom.jpg);
@@ -378,8 +386,13 @@ h5 {
       width: 100%; } }
   @media screen and (max-width: 620px) {
     .custom {
-      width: 100%;
-      height: 300px; } }
+      width: 90%;
+      margin: 2.5% auto;
+      height: 275px; } }
+
+@media screen and (max-width: 620px) {
+  .rafting {
+    margin-top: 5%; } }
 
 .main-nav {
   display: flex;
